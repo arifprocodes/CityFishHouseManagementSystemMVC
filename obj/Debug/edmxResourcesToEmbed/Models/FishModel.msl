@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FishTicketDataModelStoreContainer" CdmEntityContainer="FishTicketDataEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="FishTicketDataModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookingTBLs">
+      <EntityTypeMapping TypeName="FishTicketDataModel.BookingTBL">
+        <MappingFragment StoreEntitySet="BookingTBL">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="person" ColumnName="person" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeedBackTBs">
+      <EntityTypeMapping TypeName="FishTicketDataModel.FeedBackTB">
+        <MappingFragment StoreEntitySet="FeedBackTB">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="message" ColumnName="message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsTBs">
+      <EntityTypeMapping TypeName="FishTicketDataModel.NewsTB">
+        <MappingFragment StoreEntitySet="NewsTB">
+          <ScalarProperty Name="news" ColumnName="news" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTBs">
+      <EntityTypeMapping TypeName="FishTicketDataModel.UserTB">
+        <MappingFragment StoreEntitySet="UserTB">
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

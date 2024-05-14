@@ -1,0 +1,61 @@
+﻿@model  OnlineFishHouseManagementSystemMVC.Models.BookingTBL
+@{
+    ViewBag.Title = "Booking";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<center>
+    @Html.BeginForm("Booking", "Home")
+    {
+    <table align="center" hieght="600px" width="500px" class="rgtable" style="background-color:antiquewhite">
+            <tr>
+                <td colspan="2" align="center">
+                    <h2>Book Now</h2>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Your Name</td>
+                <td align="center">
+                    @Html.TextBoxFor(m => m.name)
+                </td>
+            </tr>
+            <tr>
+                <td align="center">No Of Person</td>
+                <td align="center">
+                    @Html.TextBoxFor(m => m.person)
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Category</td>
+                <td align="center">
+                    @Html.TextBoxFor(m => m.Category)
+            </tr>
+            <tr>
+                <td align="center">Email</td>
+                <td align="center">
+                    @Html.TextBoxFor(m => m.email)
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Mobile</td>
+                <td align="center">
+                    @Html.TextBoxFor(m => m.mobile)
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Address</td>
+                <td align="center">
+                    @Html.TextBoxFor(m => m.address)
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="Submit" class="btn" value="BookNow" />
+                </td>
+            </tr>
+        </table>
+    }
+</center>
+
+

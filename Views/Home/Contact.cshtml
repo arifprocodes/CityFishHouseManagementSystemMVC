@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<div class="contact-w3ls" id="contact">
+    <div class="container">
+        <div class="w3_tittle second two"><h3 class="agile-tittle two gal">Contact Us</h3> <div class="line-style second"><span class="second"></span></div></div>
+        <div class="inner_w3l_agile_grids">
+            <div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile2" data-aos="flip-left">
+                <div class="contact-agileits">
+                    <h4>Drop a Line</h4>
+                    <p class="contact-agile2">Sign Up For Our News Letters</p>
+                    <form action="#" method="post" name="sentMessage" id="contactForm" novalidate>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label class="contact-p1">Full Name:</label>
+                                <asp:TextBox ID="txtName" class="form-control" runat="server"></asp:TextBox>
+
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label class="contact-p1">Phone Number:</label>
+                                <asp:TextBox ID="txtMobile" class="form-control" runat="server"></asp:TextBox>
+
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label class="contact-p1">Email Message:</label>
+                                <asp:TextBox ID="txtMessage" class="form-control" runat="server"></asp:TextBox>
+
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <input type="submit" value="Send" class="btn btn-primary"/>
+                       
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1 map" data-aos="flip-right">
+
+
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+

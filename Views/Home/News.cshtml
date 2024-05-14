@@ -1,0 +1,24 @@
+﻿@model   IEnumerable<OnlineFishHouseManagementSystemMVC.Models.NewsTB>
+@{
+    ViewBag.Title = "News";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<table class="table">
+    <tr>
+        <td>News</td>
+        <td>Subject</td>
+        <td>Update Date</td>
+        <td>Description</td>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.news</td>
+            <td>@item.subject</td>
+            <td>@item.date</td>
+            <td>@item.description</td>
+        </tr>
+     }
+</table>
+
